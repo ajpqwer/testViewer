@@ -1,0 +1,80 @@
+
+<div  class="s3LLOxmGvGE-adj " >  
+    <ul  style="margin-top: 0px;background-color:#1976d2; list-style: none;">     
+        <li style="padding:2px; color: white">Hello, {{sbFlbrl0b3K}}</li>
+    </ul>
+    <ul style="padding-left: 20px; padding-bottom: 0px;">  
+        <div onclick="" style="color: #444040">
+            <h6 style="margin: 0px;"  >Ads Around You</h6>
+        </div> 
+        <!-- <li class="list"><h6 style="margin-top: 0px; margin-bottom: 0px; color: black; font-weight: normal;" > 
+            <input type="checkbox" name="1" title="{{sYaMtbkbVLq}}">
+            <label for="1">{{sYaMtbkbVLq}}</label></h6></li>
+         <li class="list"><h6 style="margin-top: 0px; margin-bottom: 0px; color: black;  font-weight: normal;"> 
+            <input type="checkbox" name="2" title="{{sYaMtbkbVLq}}">
+            <label for="2">{{sbNB53AZWwC}}</label></h6></li>
+        <li class="list"><h6 style="margin-top: 0px; margin-bottom: 0px; color: black;  font-weight: normal;"> 
+            <input type="checkbox" name="3" title="{{sYaMtbkbVLq}}">
+            <label for="3">{{sNpjbSdxnbW}}</label></h6></li>    
+        <li class="list"><h6 style="margin-top: 0px; margin-bottom: 0px; color: black;  font-weight: normal;"> 
+            <input type="checkbox" name="4" title="{{sYaMtbkbVLq}}">
+            <label for="4">{{sb7qSLwrsxc}}</label></h6></li>   -->
+            <table style="border: 0px;">
+                <div *ngFor="let category_vb of sGlVnPxG5ld let sVKssKZek6b=index">
+                    <tr *ngIf="sVKssKZek6b < 4" style="margin-bottom: 0px;margin-top: 0px;">
+                        <td style="margin: 0px;padding: 0px;">
+                            <input type="checkbox" name="{{category_vb.p13}}" id="{{category_vb.p13}}" title="{{category_vb.p2}}" (click)="adTypeSelected_mt(category_vb.p13)" ></td>
+                        
+                        <td style="margin: 0px;padding: 0px;">
+                            <h6 style="margin: 0px; color: black; font-weight: normal;" >
+                            <label for="{{category_vb.p13}}">{{category_vb.p2}}</label></h6> </td>
+                    </tr>    
+                </div>           
+            </table>
+    </ul>
+    <ul style="padding-left: 20px;margin-bottom: 10px;margin-top: 0px; list-style: none;">        
+        <div onclick="" style="color: #444040">
+            <h6 style="margin: 0px;"  >{{stY7Ga5hos5}}</h6>
+            </div>   
+            <div *ngFor="let category_vb of sGlVnPxG5ld let sVKssKZek6b=index" style="align-items: center;border: 0px solid rgb(119, 15, 93)">
+                <li *ngIf="sVKssKZek6b > 3" style="margin-bottom: 0px;margin-top: 0px;"><h6 style="margin: 0px; color: black; font-weight: normal;" >
+                    <input type="checkbox" name="{{category_vb.p13}}" id="{{category_vb.p13}}" title="{{category_vb.p2}}"  (click)="filterSelected_mt(category_vb.p13)" >
+                    <label for="{{category_vb.p13}}">{{category_vb.p2}}</label></h6>  </li>
+            </div>                    
+      
+    </ul>
+
+    <ul style="padding: 20px;margin-top: 10px; list-style: none;">
+        <div onclick="" style="color: #444040">
+            <h6 style="margin: 0px;"  >User</h6>
+            </div> 
+            <div *ngIf="!sHSJlD52Elb">
+        <li class="list"><h6 style="margin: 0px; color: black; font-weight: normal;" >
+            <a class="link" href="{{this.sxvqibxQov2.sWhI8l1zJbj}}/showLogin/{{this.s01mqbsFbTi.sbgdsGLsFsb}}">
+        {{szmTrVxYF3t}}</a></h6>  </li></div>
+        <div *ngIf="sHSJlD52Elb">
+            <li class="list"><h6 style="margin: 0px; color: black; font-weight: normal;">
+                <a class="link" (click)="slldlmpaqlP()">
+                {{sYaPsD7IO8D}}</a></h6>  </li>
+            <li class="list"> <h6 style="margin: 0px; color: black; font-weight: normal;">
+                <a  class="link"  [routerLink]="'/resetSecretNumber'">
+                {{sSbl8pxqdKS}}</a></h6></li>  
+            <li *ngIf="sbs7jxliYqQ != null" class="list"> <h6 style="margin: 0px; color: black;">
+                <a class="link" href="{{sbs7jxliYqQ}}{{this.s01mqbsFbTi.sbgdsGLsFsb}}/{{this.sxvqibxQov2.sb2zlGwX8bh}}" >
+                {{ sbqIdWsB5fy }}</a></h6></li>
+            <li class="list"> <h6 style="margin: 0px; color: black;">
+                  <a class="link"  [routerLink]="['/userSettings/',s01mqbsFbTi.sbgdsGLsFsb]" target="_blank">
+                {{ sB555lQq8MS }}</a></h6></li>              
+        </div>
+    </ul>
+
+    <ul style="padding: 20px; margin-bottom: 100px;margin-top: 30px; list-style: none;">
+        
+        <li class="list"><h6 style="margin: 0px; color: black; font-weight: normal;" >
+            <a class="link"   [routerLink]="'/contactUs'" target="_blank">
+        {{slbGXnabqbq}}</a></h6>  </li>
+        
+    </ul>
+           
+                 
+</div>
